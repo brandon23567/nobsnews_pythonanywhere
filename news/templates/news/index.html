@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>noBSnews</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/base_css/index.css' %}">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<h2><a href="">noBSnews</a></h2>
+		</div>
+
+		<ul class="navbar">
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Suggest</a></li>
+		</ul>
+
+		<div class="signup_btn_container">
+			<button class="signup_btn"><a href="{% url 'signup' %}">Sign Up</a></button>
+		</div>
+	</header>
+
+	<section class="main_content_container">
+		<div class="left_container"></div>
+		<div class="container">
+			<div class="article">
+				<div class="img_container">
+					<img src="{% static 'imgs/1.jpg' %}" class="img">
+				</div>
+				<div class="content_container">
+					<h1>Goku is about that life on god!</h1>
+
+					<p>
+						Y'all ever heard that thing whereby they tell u that a certain character is about that life, yeah goku is the defination of that. He is the epitome of someone who's hands are rated E for everyone. Including himself
+					</p>
+
+					<button class="more_btn"><a href="{% url 'article1' %}">Read More</a></button>
+				</div>
+			</div>
+
+			<div class="article">
+				<div class="img_container">
+					<img src="{% static 'imgs/R.jpg' %}" class="img">
+				</div>
+				<div class="content_container">
+					<h1>U see, ichigoat is no man to disrespect!</h1>
+
+					<p>
+						Usually in our society we are told to forgive and forget those who do you wrong right? Ichigo don't give a fuck bout non of that. He does not tolerate any BS at all.
+					</p>
+
+					<button class="more_btn"><a href="{% url 'article2' %}">Read More</a></button>
+				</div>
+			</div>
+
+			<div class="article">
+				<div class="img_container">
+					<img src="{% static 'imgs/kid_buu.jpg' %}" class="img">
+				</div>
+				<div class="content_container">
+					<h1>Kid buu is one with the force!</h1>
+
+					<p>
+						Everyone know those characters who got black air force energy but there is one man who stands above them all. He does not have black air force energy, this little menace is one with the damn force!
+					</p>
+
+					<button class="more_btn"><a href="{% url 'article3' %}">Read More</a></button>
+				</div>
+			</div>
+
+			<div class="signup_contaner">
+				<h2>Want more? <a href="{% url 'signup' %}">Sign up</a></h2>
+			</div>
+		</div>
+		<div class="right_container"></div>
+	</section>
+
+	<footer>
+		This is the footer for now
+	</footer>
+</body>
+</html>
